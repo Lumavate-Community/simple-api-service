@@ -16,7 +16,3 @@ def data(route_path):
 @lumavate_route('/discover/properties', ['GET'], RequestType.system, [SecurityType.jwt])
 def properties():
   return Service().do_properties()
-
-@lumavate_route('/nav', ['GET'], RequestType.page, [SecurityType.jwt])
-def  get_nav():
-  return Service().get_nav()
