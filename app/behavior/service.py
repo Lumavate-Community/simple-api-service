@@ -53,7 +53,7 @@ This type of property is used when a numeric value is required
   * Max - Sets the maximum allowed value
     '''
 
-    properties.append(Properties.Property('Sample Properties', 'Numeric', 'numProp', 'Numeric (with Max & Min)', 'numeric', help_text=helpText, options={ 'max': 100, 'min': -100 }))
+    properties.append(Properties.Property('Sample Properties', 'Numeric', 'numProp', 'Numeric (with Max & Min)', 'numeric', default=0, help_text=helpText, options={ 'max': 100, 'min': -100 }))
 
     #Text Area - Configured for 3 rows
     helpText = '''
@@ -108,12 +108,12 @@ This type of property is used when a user is required to select multiple options
 * Options:
   * An array of options
 
-  [ "Option 1", "Option 2" ]
+  [ { "value": "value1", "displayValue": "Option 1" }, { "value": "value2", "displayValue" : "Option 2" } ]
     '''
 
     multiselectOptions = [
-      "Option 1",
-      "Option 2"
+      { "value": "value1", "displayValue": "Option 1" },
+      { "value": "value2", "displayValue" : "Option 2" }
     ]
     properties.append(Properties.Property('Sample Properties', 'Selectable', 'msProp', 'Multiple Selection', 'multiselect', options=multiselectOptions,help_text=helpText))
 
