@@ -1,12 +1,13 @@
 # Simple API Service
 
-Use this project as a starting point for creating a new microservice that calls out to a 3rd party API.
+Use this project as a starting point for creating a new microservice. This service contains sample properties of each available type along with implementing
+endpoints to call out to a 3rd party API.
 
 ## Setup
 
 #### Cloning the Repo
 
-* Clone it.  `git clone git@github.com:LumavateTeam/python-simple=api-service.git <PROJECT_NAME>`
+* Clone it.  `git clone git@github.com:Lumavate-Community/simple=api-service.git <PROJECT_NAME>`
 * Switch to dir.  `cd <PROJECT_NAME>`
 * Remove remote origin. `git remote remove origin`
 * Create new <PROJECT_NAME> repository in github.
